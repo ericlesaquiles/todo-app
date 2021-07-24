@@ -1,7 +1,10 @@
-%h1 Editing todo_list
+.todo_list_title
+  %h1 Editing todo_list
 
-= render 'form'
+.forms
+  = render 'form'
 
-= link_to 'Show', @todo_list
-\|
-= link_to 'Back', todo_lists_path
+.links  
+  = link_to 'Back', @todo_list
+  \|
+  = link_to 'Cancel', todo_lists_path
